@@ -30,10 +30,6 @@ const App = () => {
 
   return (
     <>
-      <section>
-        <h1>Do you like potatoes?</h1>
-        <div>Scroll down...</div>
-      </section>
       <Controller>
         <Scene
           triggerElement={"#sticky"}
@@ -55,7 +51,8 @@ const App = () => {
             />
             <motion.img
               id='mustache' src={mustache} alt='potato'
-              onMouseOver={toggleHover}
+              onMouseEnter={toggleHover}
+              onMouseLeave={toggleHover}
               className={hovered ? 'hover' : ''}
               style={{
                 y: moveMustache
@@ -101,9 +98,6 @@ const App = () => {
           </section>
         </Scene>
       </Controller>
-      <section>
-        <h1>How do you like them potatoes!?!?</h1>
-      </section>
     </>
   )
 }
