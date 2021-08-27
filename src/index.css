@@ -1,15 +1,61 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@700&family=Roboto+Slab&display=swap");
+
+* {
   margin: 0;
-  font-family: sans-serif; }
+  padding: 0;
+  color: #131313
+}
+
+html {
+  margin: 0;
+  font-family: sans-serif;
+}
 
 section {
-  padding: 4rem;
   height: 80vh;
   position: relative;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 svg {
-  position: absolute; }
+  position: absolute;
+  left: 10px;
+}
 
 .sticky {
-  margin: 0 0; }
+  margin: 0 0;
+}
+
+.container {
+  overflow: hidden;
+}
+
+svg {
+  z-index: 10;
+  top: 10px;
+}
+
+h1 {
+  font-family: "Gothic A1", sans-serif;
+  font-size: 150px;
+  line-height: 1;
+  z-index: -1;
+}
+
+h3 {
+  font-family: "Roboto Slab", serif;
+  font-size: 100px;
+}
+
+.text {
+  text-align: right;
+  position: relative;
+  top: 90px;
+  right: 10px;
+  height: 400px;
+  letter-spacing: .8;
+}
+
+.letter {
+  display: inline-block;
+}
